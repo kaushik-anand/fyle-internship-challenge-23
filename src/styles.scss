@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 h2{
-  color: red;
+  color: aqua;
 }
 h3{
   color: aqua;
@@ -17,4 +17,19 @@ hr{
   top: 65px; /* Position 65px from the top */
   left: 0;
   z-index: 998;
+}
+span{
+  color: red;
+}
+.about-google-title{
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+.google-description{
+  font-size: 25px;
+  margin-top: 50px;
+}
+a{
+  text-decoration: underline;
 }

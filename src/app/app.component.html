@@ -16,7 +16,7 @@
         <h2 class="about-google-title">About GitGoogle</h2> <!-- Added heading -->
 
 
-        <p>GitGoogle revolutionizes GitHub navigation, enabling effortless exploration<br> of profiles and repositories. With comprehensive insights and user-friendly design<br> it ensures smooth interactions for all skill levels. Join today to unlock limitless coding possibilities and stay connected with the latest developments.</p>
+         <div class="google-description">GitGoogle revolutionizes GitHub navigation, enabling effortless exploration<br> of profiles and repositories. With comprehensive insights and user-friendly<br> design it ensures smooth interactions for all skill levels. Join today to unlock limitless coding possibilities and stay connected with the latest developments.</div>
 
       </div>
       <div class="about-gif">
@@ -72,7 +72,11 @@
 
         </div>
 
-        <!-- Next button -->
-        <button class="page-button" (click)="nextPage()" [disabled]="currentPage === pagedRepositories.length - 1 || !pagedRepositories[currentPage + 1]">Next</button>
-      </div>
+        <button class="page-button" (click)="nextPage()" [disabled]="currentPage === pagedRepositories.length - 1 || !pagedRepositories[currentPage + 1]">
+          Next
+        </button>
+        </div>
+
+        <div class="footer-text"> © 2024 GitUsers - All rights reserved | Made with love by <a href="https://kaushikanand.netlify.app/">kaushik-anand</a></div>
+
     </footer>

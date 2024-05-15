@@ -17,13 +17,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
 }
 
 .loader img {
-  width: 2100%;
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .container {
@@ -47,14 +48,20 @@ body {
   align-items: center;
 }
 
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
 .vertical-line {
   position: absolute;
   top: 120px;
   left: 30px;
   width: 8px;
-  height: calc(100% - 450px);
-  background: linear-gradient(to bottom, red, red);
-  box-shadow: 0 0 20px 5px red;
+  height: calc(100% - 400px);
+  background: linear-gradient(to bottom, red, white);
+  box-shadow: 0 0 20px 5px aqua;
   animation: glowing 1.5s infinite alternate;
   z-index: 1;
   border-radius: 20px;
@@ -74,40 +81,40 @@ body {
 }
 
 .about-section {
-  padding: 30px;
-  padding-top: 50px;
+  padding: 30px 30px 0;
 }
 
 .about-content {
   display: flex;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .about-text {
   flex: 1;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 0 30px;
 }
 
 .about-title {
-  font-size: 64px;
+  font-size: 56px;
   margin-bottom: 10px;
   font-weight: bolder;
 }
 
-.about-title span {
-  color: aqua;
-}
-
-.about-text p {
-  font-size: 16px;
-}
 
 .about-gif img {
   width: 100%;
   border-radius: 10px;
-  align-items: right;
+  animation: moveUpDown 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
 }
 
 @media (max-width: 600px) {
@@ -116,83 +123,33 @@ body {
     align-items: flex-start;
   }
 
-  .about-text {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .about-gif img {
-    width: 100%;
-    height: auto;
-  }
-
   .vertical-line {
-    position: absolute;
-    top: 120px;
-    left: 30px;
-    width: 8px;
     height: calc(100% - 200px);
-    background: linear-gradient(to bottom, aqua, white);
-    box-shadow: 0 0 20px 5px aqua;
-    animation: glowing 1.5s infinite alternate;
-    z-index: 1;
-    border-radius: 20px;
   }
-}
-
-.about-google-title {
-  margin-top: 25px;
-  margin-bottom: 50px;
-  color: gray;
-  font-size: 45px;
-  margin-bottom: 15px;
-}
-
-.about-section .about-content .about-text p {
-  margin-top: 25px;
-  font-size: 25px;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
 }
 
 .search-heading {
-  font-size: 24px;
-  display: flex;
-  align-items: left;
-  justify-content: left;
+  font-size: 30px;
   margin-left: 55px;
 }
 
 .search-container {
+  width: 50%;
   display: flex;
   justify-content: left;
-  margin-top: 10px;
-  margin-left: 55px;
+  margin: 10px 0 0 55px;
 }
 
 .search-bar {
-  position: relative;
-  padding: 5px;
+  padding: 7.5px; /* Increase padding to increase size */
   margin-right: 10px;
   border-radius: 6px;
-  border: none;
+  border: 1px solid red; /* Add red border */
   background-color: black;
   color: #c9d1d9;
-  transition: border-color 0.5s;
   outline: none;
-}
-
-.search-bar {
-  border: 1px solid red;
-  width: 50%;
-}
-
-.search-button {
-  border: 2px solid red;
+  transition: border-color 0.5s;
+  width: 150%; /* Increase width by 50% */
 }
 
 .search-bar::after {
@@ -211,9 +168,9 @@ body {
 }
 
 .search-button {
-  padding: 5px 10px;
+  padding: 7.5px 15px; /* Increase size by 50% */
   border-radius: 6px;
-  border: 0.5px solid red;
+  border: 2px solid red; /* Add red border */
   background-color: black;
   color: aqua;
   cursor: pointer;
@@ -224,25 +181,6 @@ body {
   color: black;
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-}
-
-.loader img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .mainsection {
   background-color: #000;
   padding-top: 80px;
@@ -250,7 +188,6 @@ body {
 
 .main-content {
   display: flex;
-  background-color: #000;
   justify-content: space-between;
   padding: 20px;
   flex: 1;
@@ -260,16 +197,14 @@ body {
   display: flex;
   align-items: center;
   flex: 1;
-  margin-right: 20px;
-  margin-left: 50px;
+  margin: 0 20px 0 50px;
 }
 
 .avatar {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-bottom: 50px;
-  margin-right: 25px;
+  margin: 0 25px 50px 0;
 }
 
 .user-info {
@@ -282,23 +217,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   position: relative;
-  padding-top: 20px;
-  padding-left: 10px;
-}
-
-.separator {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #ccc;
-  transform: translateY(-50%);
-  transition: all 0.3s ease;
-}
-
-.repositories-section:hover .separator {
-  background-color: #000;
+  padding: 20px 10px 0;
 }
 
 .repository {
@@ -312,14 +231,6 @@ body {
 .repository:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.repository:nth-child(odd) {
-  background-color: #000;
-}
-
-.repository:nth-child(even) {
-  background-color: #000;
 }
 
 .repository:hover {
@@ -365,7 +276,21 @@ body {
   padding: 5px 10px;
   border-radius: 6px;
   border: none;
-  background-color: red;
-  color: #f8fafc;
+  background-color: #000407;
+  color: red;
   cursor: pointer;
+}
+
+.page-button[disabled] {
+  background-color: #010c14;
+  color: red;
+}
+
+.items-per-page-select {
+  background-color: #000;
+  color: red;
+}
+.footer-text{
+  color: red;
+  font-size: 18px;
 }
