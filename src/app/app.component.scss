@@ -17,12 +17,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .loader img {
-  width: 2100%; /* Adjust this value as needed */
-  max-width: 100%; /* Set a maximum width if necessary */
+  width: 2100%;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -42,8 +42,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 .header-content {
   display: flex;
   align-items: center;
@@ -51,13 +49,13 @@ body {
 
 .vertical-line {
   position: absolute;
-  top: 120px; /* Shift 30px from the top */
-  left: 30px; /* Shift 30px from the left */
+  top: 120px;
+  left: 30px;
   width: 8px;
-  height: calc(100% - 450px); /* Adjust height to fill the remaining space */
+  height: calc(100% - 450px);
   background: linear-gradient(to bottom, red, red);
-  box-shadow: 0 0 20px 5px red; /* Add box shadow for the glowing effect */
-  animation: glowing 1.5s infinite alternate; /* Add animation for continuous glowing */
+  box-shadow: 0 0 20px 5px red;
+  animation: glowing 1.5s infinite alternate;
   z-index: 1;
   border-radius: 20px;
 }
@@ -67,7 +65,7 @@ body {
     box-shadow: 0 0 20px 5px white;
   }
   100% {
-    box-shadow: 0 0 40px 10px red; /* Adjust the glow intensity */
+    box-shadow: 0 0 40px 10px red;
   }
 }
 
@@ -82,13 +80,13 @@ body {
 
 .about-content {
   display: flex;
-  align-items: left; /* Vertically align items */
+  align-items: left;
   justify-content: space-between;
 }
 
 .about-text {
   flex: 1;
-  margin-right: 30px; /* Space between text and image */
+  margin-right: 30px;
   margin-left: 30px;
 }
 
@@ -130,13 +128,13 @@ body {
 
   .vertical-line {
     position: absolute;
-    top: 120px; /* Shift 30px from the top */
-    left: 30px; /* Shift 30px from the left */
+    top: 120px;
+    left: 30px;
     width: 8px;
-    height: calc(100% - 200px); /* Adjust height to fill the remaining space */
+    height: calc(100% - 200px);
     background: linear-gradient(to bottom, aqua, white);
-    box-shadow: 0 0 20px 5px aqua; /* Add box shadow for the glowing effect */
-    animation: glowing 1.5s infinite alternate; /* Add animation for continuous glowing */
+    box-shadow: 0 0 20px 5px aqua;
+    animation: glowing 1.5s infinite alternate;
     z-index: 1;
     border-radius: 20px;
   }
@@ -147,12 +145,12 @@ body {
   margin-bottom: 50px;
   color: gray;
   font-size: 45px;
-  margin-bottom: 15px; /* Adjust margin as needed */
+  margin-bottom: 15px;
 }
 
 .about-section .about-content .about-text p {
   margin-top: 25px;
-  font-size: 25px; /* Adjust the font size as needed */
+  font-size: 25px;
 }
 
 .logo {
@@ -184,18 +182,15 @@ body {
   border: none;
   background-color: black;
   color: #c9d1d9;
-  transition: border-color 0.5s; /* Add transition for border color */
+  transition: border-color 0.5s;
   outline: none;
 }
 
-/* Add a border around search box and search button */
-/* Add a border around search box */
 .search-bar {
   border: 1px solid red;
-  width: 50%; /* Increase the search box size by 100% */
+  width: 50%;
 }
 
-/* Add border around search button */
 .search-button {
   border: 2px solid red;
 }
@@ -207,18 +202,18 @@ body {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: transparent; /* Change the initial background color to transparent */
-  transition: background-color 0.5s ease; /* Add transition for background color */
+  background-color: transparent;
+  transition: background-color 0.5s ease;
 }
 
 .search-bar:focus::after {
-  background-color: aqua; /* Change the background color to aqua when focused */
+  background-color: aqua;
 }
 
 .search-button {
   padding: 5px 10px;
   border-radius: 6px;
-  border: 0.5px solid red; /* Add red border */
+  border: 0.5px solid red;
   background-color: black;
   color: aqua;
   cursor: pointer;
@@ -238,14 +233,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Add a semi-transparent background */
-  z-index: 1000; /* Ensure it's on top of all other content */
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
 }
 
 .loader img {
-  width: 100%; /* Make it cover the full display */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the entire area */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .mainsection {
@@ -279,7 +274,7 @@ body {
 
 .user-info {
   text-align: left;
-  max-width: calc(100% - 170px); /* Adjust based on avatar size and margin */
+  max-width: calc(100% - 170px);
 }
 
 .repositories-section {
@@ -373,11 +368,4 @@ body {
   background-color: red;
   color: #f8fafc;
   cursor: pointer;
-}
-
-
-
-.items-per-page-select {
-  background-color: black;
-  color: #fff;
 }
