@@ -5,7 +5,6 @@
       <h1>GitGoogle</h1>
     </div>
   </header>
-  <hr id="red-line">
 
 
   <div class="vertical-line"></div> <!-- Add vertical line here -->
@@ -70,10 +69,10 @@
           <select id="itemsPerPage" [(ngModel)]="itemsPerPage" (change)="onItemsPerPageChange()" class="items-per-page-select">
             <option *ngFor="let option of itemsPerPageOptions" [value]="option">{{ option }}</option>
           </select>
+
         </div>
 
         <!-- Next button -->
         <button class="page-button" (click)="nextPage()" [disabled]="currentPage === pagedRepositories.length - 1 || !pagedRepositories[currentPage + 1]">Next</button>
       </div>
     </footer>
-

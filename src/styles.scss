@@ -8,3 +8,13 @@ h2{
 h3{
   color: aqua;
 }
+hr{
+  border: none;
+  height: 1px;
+  background-color: red;
+  width: 100%;
+  position:absolute; /* Make the red line fixed */
+  top: 65px; /* Position 65px from the top */
+  left: 0;
+  z-index: 998;
+}
