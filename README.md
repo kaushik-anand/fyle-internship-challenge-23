@@ -23,7 +23,7 @@ Git Google is an Angular 14+ single-page application (SPA) that allows users to 
 
 ### Hosting
 
-The application is hosted on Vercel. You can access it [here]([https://fyle-internship-challenge-23-kaushik.vercel.app/).
+The application is hosted on Vercel. You can access it [here] ([https://fyle-internship-challenge-23-kaushik.vercel.app/).
 
 ### API Documentation
 
