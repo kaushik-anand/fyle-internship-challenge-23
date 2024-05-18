@@ -1,4 +1,4 @@
-## GitBuddy - Github Repositories Listing Page
+## GitGoogle - Github Repositories Listing Page
 
 ### Project Overview
 
