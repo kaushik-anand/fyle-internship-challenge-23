@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-GitBuddy is an Angular 14+ single-page application (SPA) that allows users to input a GitHub username and displays the public GitHub repositories associated with that user. The application includes features such as server-side pagination, a search bar, skeleton loaders, and a dropdown for selecting page size.
+Gitgoogle is an Angular 14+ single-page application (SPA) that allows users to input a GitHub username and displays the public GitHub repositories associated with that user. The application includes features such as server-side pagination, a search bar, skeleton loaders, and a dropdown for selecting page size.
 
 ### Features
 
