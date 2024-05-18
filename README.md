@@ -1,8 +1,8 @@
-## GitGoogle - Github Repositories Listing Page
+## GitGoogle - GitHub Repositories Listing Page
 
 ### Project Overview
 
-Git Google is an Angular 14+ single-page application (SPA) that allows users to input a GitHub username and displays the public GitHub repositories associated with that user. The application includes features such as server-side pagination, a search bar, skeleton loaders, and a dropdown for selecting page size.
+GitBuddy is an Angular 14+ single-page application (SPA) that allows users to input a GitHub username and displays the public GitHub repositories associated with that user. The application includes features such as server-side pagination, a search bar, skeleton loaders, and a dropdown for selecting page size.
 
 ### Features
 
@@ -23,12 +23,11 @@ Git Google is an Angular 14+ single-page application (SPA) that allows users to 
 
 ### Hosting
 
-The application is hosted on Vercel. You can access it [here] ([https://fyle-internship-challenge-23-kaushik.vercel.app/).
+The application is hosted on Vercel. You can access it [here](https://fyle-internship-challenge-23-kaushik.vercel.app/).
 
 ### API Documentation
 
 For detailed information about the GitHub API used in this project, visit the [GitHub REST API documentation](https://docs.github.com/en/rest/reference).
-
 
 ### Assumptions
 
@@ -45,7 +44,6 @@ For detailed information about the GitHub API used in this project, visit the [G
 - Enhance search functionality with advanced filters.
 - Implement user authentication to access private repositories.
 - Improve UI/UX with more interactive elements and better animations.
-
 
 ### Project Structure
 
@@ -84,27 +82,24 @@ src/
     └── global.scss
 ```
 
+### Install Requirements
 
-### Install requirements
-* Clone the repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/Kkaransingh/fyle-internship-challenge-23.git
    cd fyle-internship-challenge-23
    ```
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+2. Install Angular CLI [Reference](https://angular.io/cli)
+3. Run `npm install` in this repository
 
-## Development server
+### Development Server
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
+Run `ng serve` for a development server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
 
 ### Contact
 
 If you have any questions, feel free to contact me at karankamal1807@gmail.com.
 
+### Further Help
 
-## Further help
-
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more. Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
